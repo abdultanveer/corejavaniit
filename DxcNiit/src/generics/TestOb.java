@@ -11,6 +11,8 @@ public class TestOb {
 		g2.show();
 		System.out.println(g2.getOb());
 		
+		//Test<Integer> myTest = new Test<Integer>(10,20);
+		Test<MyNumber> myTest = new Test<MyNumber>(new MyNumber(), new MyNumber());
 		
 	}
 
