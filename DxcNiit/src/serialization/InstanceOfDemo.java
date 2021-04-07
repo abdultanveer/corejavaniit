@@ -16,6 +16,7 @@ public class InstanceOfDemo {
 		}
 		else if(o instanceof Dog) {
 			Dog d1 = (Dog)o;
+			System.out.printf("dogs variables are %d %d",d1.i,d1.j);
 		}
 		else 		if(o instanceof Rat) {
 			Rat r1 = (Rat)o;
