@@ -6,8 +6,8 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class Account implements Serializable{
-	String userName = "abdul";
-	transient String password = "ansari";
+	String userName = "abdul";  //normal furniture
+	transient String password = "ansari";   //jewellery
 
 	private void writeObject(ObjectOutputStream oos) throws ClassNotFoundException,IOException{
 		oos.writeUTF("123"+userName+","+"456"+password);
