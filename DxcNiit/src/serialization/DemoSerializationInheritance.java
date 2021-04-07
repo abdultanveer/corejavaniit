@@ -17,7 +17,7 @@ public class DemoSerializationInheritance {
 		FileOutputStream fos = new FileOutputStream(FILE_NAME);
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(rabbit);
-		
+		System.out.println("beginning to de serialize");
 		FileInputStream fis = new FileInputStream(FILE_NAME);
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Rabbit rabbit2 = (Rabbit)ois.readObject();
