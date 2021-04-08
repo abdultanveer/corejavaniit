@@ -17,8 +17,11 @@ public class TestEmployees {
 		System.out.println(employees);
 		//sort the employees based on their eid in ascending order
 		Comparator<Employee> c = (e1,e2) -> (e1.eid < e2.eid)? -1 :(e1.eid > e2.eid)? 1 :0;
+		Comparator<Employee> n = (e1,e2) -> e1.name.compareTo(e2.name);
+
+		Collections.sort(employees,n);
 		
-		Collections.sort(employees,c);
+		//sort employees alphabetical order of their names..
 				//new EmployeeComparator());
 		System.out.println(employees);
 
