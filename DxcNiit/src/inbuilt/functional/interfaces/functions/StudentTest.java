@@ -21,13 +21,14 @@ public class StudentTest {
 		}
 	}
 
-	private static void populateStudents() {
+	public static ArrayList<JavaStudent> populateStudents() {
 		javaStudents = new ArrayList<JavaStudent>();
 		javaStudents.add(new JavaStudent("abdul",50));
 		javaStudents.add(new JavaStudent("bapji",80));
 		javaStudents.add(new JavaStudent("lahari",70));
 		javaStudents.add(new JavaStudent("gayathri",90));
 		javaStudents.add(new JavaStudent("akash",55));
+		return javaStudents;
 
 	}
 
