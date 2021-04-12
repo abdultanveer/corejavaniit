@@ -2,6 +2,19 @@ package lamdaexpressions.anonymous;
 
 public class SecondTest {
 	public static void main(String[] args) {
+		/*
+		 * CovidPerson covidPerson = new CovidPerson(); covidPerson.eat();
+		 */
+		
+		
+		Person covidPerson = new Person() {
+			
+			@Override
+			void eat() {
+				System.out.println("hey mr wash ur hands properly");
+			}
+		};
+		covidPerson.eat();
 		
 		Person employee = new Person() {
 			
