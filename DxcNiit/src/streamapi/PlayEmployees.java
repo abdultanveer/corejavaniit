@@ -24,9 +24,12 @@ public class PlayEmployees {
 				:(e1.salary > e2.salary)? +1
 				: 0;
 			};
-			List<Employee>	sortedList = empList.stream().sorted(c).collect(Collectors.toList());
-
-			System.out.println(sortedList);
+		//	List<Employee>	sortedList = empList.stream().sorted(c).collect(Collectors.toList());
+			
+			
+			
+			Employee maxSalary = empList.stream().min((e1,e2) -> e2.compareTo(e1)).get();
+			System.out.println(maxSalary.toString());
 
 
 
