@@ -1,6 +1,7 @@
 package streamapi;
 
-public class Employee implements Comparable<Employee>{
+public class Employee {
+//implements Comparable<Employee>{
 	
 	String name;
 	int salary;
@@ -17,12 +18,10 @@ public class Employee implements Comparable<Employee>{
 				//super.toString();
 	}
 
-	@Override
-	public int compareTo(Employee o) {
-		// +ve no if you want o to come first
-		return (this.salary > o.salary) ? 1 
-				:(this.salary < o.salary) ? -1
-				:  0;
-	}
+	/*
+	 * @Override public int compareTo(Employee o) { // +ve no if you want o to come
+	 * first return (this.salary > o.salary) ? 1 :(this.salary < o.salary) ? -1 : 0;
+	 * }
+	 */
 
 }
