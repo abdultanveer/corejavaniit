@@ -24,12 +24,15 @@ public class PlayEmployees {
 				:(e1.salary > e2.salary)? +1
 				: 0;
 			};
-		//	List<Employee>	sortedList = empList.stream().sorted(c).collect(Collectors.toList());
+			List<Employee>	sortedList = empList.stream().sorted(c).collect(Collectors.toList());
+			sortedList.forEach(System.out::println);  //this is using method reference
+			//sortedList.stream().forEach(e ->{System.out.println(e);});//this using a lamda expression -- functional interface
+			Employee[] employees = (Employee[]) sortedList.stream().toArray();
 			
-			
-			
-			Employee maxSalary = empList.stream().min((e1,e2) -> e2.compareTo(e1)).get();
-			System.out.println(maxSalary.toString());
+		/*
+		 * Employee maxSalary = empList.stream().min((e1,e2) -> e2.compareTo(e1)).get();
+		 * System.out.println(maxSalary.toString());
+		 */
 
 
 
