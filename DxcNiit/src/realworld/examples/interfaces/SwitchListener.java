@@ -6,6 +6,10 @@ public interface SwitchListener {
 	void switchTwo();
 	void switchThree();
 	void switchFour();
+	
+	default void wifiSwitch() {
+		System.out.println("dummy implementation");
+	}
 
 
 }

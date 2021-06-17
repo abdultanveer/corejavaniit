@@ -23,5 +23,11 @@ public class GEAppliances implements SwitchListener {
 		System.out.println("GE bell is running");
 		
 	}
+	
+	@Override
+	public void wifiSwitch() {
+		System.out.println("havells wifi is running");
+
+	}
 
 }
